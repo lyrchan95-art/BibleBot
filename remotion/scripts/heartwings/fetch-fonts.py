@@ -26,4 +26,4 @@ def fetch(family, weights, name, text=None):
     print(family, '->', [os.path.basename(g) for g in got])
 fetch('Huninn', '400', 'Huninn', text=chars)
 fetch('Noto Sans TC', '900', 'NotoSansTC', text=chars)
-fetch('Unbounded', '700;900', 'Unbounded')
+fetch('Pixelify Sans', '700', 'PixelifySans')
