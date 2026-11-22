@@ -13,6 +13,7 @@ import {
   HeartwingsMobile,
   MOBILE_SECONDS as HW_M,
 } from "./heartwings/HeartwingsPromo";
+import { CARD_SECONDS, CardReel1, CardReel2, CardReel3 } from "./heartwings/Postcards";
 import { REEL_SECONDS, ReelA, ReelB, ReelC } from "./heartwings/Reels";
 
 export const RemotionRoot: React.FC = () => {
@@ -46,6 +47,9 @@ export const RemotionRoot: React.FC = () => {
       <Composition id="HeartwingReelA" component={ReelA} durationInFrames={REEL_SECONDS * 30} fps={30} width={1080} height={1920} />
       <Composition id="HeartwingReelB" component={ReelB} durationInFrames={REEL_SECONDS * 30} fps={30} width={1080} height={1920} />
       <Composition id="HeartwingReelC" component={ReelC} durationInFrames={REEL_SECONDS * 30} fps={30} width={1080} height={1920} />
+      <Composition id="HeartwingCards1" component={CardReel1} durationInFrames={CARD_SECONDS * 30} fps={30} width={1080} height={1920} />
+      <Composition id="HeartwingCards2" component={CardReel2} durationInFrames={CARD_SECONDS * 30} fps={30} width={1080} height={1920} />
+      <Composition id="HeartwingCards3" component={CardReel3} durationInFrames={CARD_SECONDS * 30} fps={30} width={1080} height={1920} />
       <Composition id="HeartwingsDesktop" component={HeartwingsDesktop} durationInFrames={HW_D * 24} fps={24} width={1920} height={1080} />
     </>
   );

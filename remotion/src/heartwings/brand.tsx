@@ -360,7 +360,7 @@ export const Badge: React.FC<{ text: string; size: number; delay?: number }> = (
 // ---------------------------------------------------------------------------
 // End card (identical lockup + CTA on every video)
 // ---------------------------------------------------------------------------
-export const EndCard: React.FC<{ mobile: boolean }> = ({ mobile }) => {
+export const EndCard: React.FC<{ mobile: boolean; badge?: string; foot?: string }> = ({ mobile, badge = BRAND.badge, foot = BRAND.postcard }) => {
   const f = useCurrentFrame();
   const { fps, width, height } = useVideoConfig();
   const a = spring({ frame: f - 2, fps, config: { damping: 12, stiffness: 150 } });
@@ -388,7 +388,7 @@ export const EndCard: React.FC<{ mobile: boolean }> = ({ mobile }) => {
           {BRAND.tagline}
         </div>
         <div style={{ opacity: b }}>
-          <Badge text={BRAND.badge} size={mobile ? 34 : 28} delay={14} />
+          <Badge text={badge} size={mobile ? 34 : 28} delay={14} />
         </div>
         <div
           style={{
@@ -407,7 +407,7 @@ export const EndCard: React.FC<{ mobile: boolean }> = ({ mobile }) => {
         >
           {BRAND.cta}
         </div>
-        <div style={{ fontFamily: ROUND, fontSize: mobile ? 32 : 26, color: SILVER, opacity: c * 0.9 }}>↳ {BRAND.postcard}</div>
+        <div style={{ fontFamily: ROUND, fontSize: mobile ? 32 : 26, color: SILVER, opacity: c * 0.9 }}>↳ {foot}</div>
       </AbsoluteFill>
     </AbsoluteFill>
   );

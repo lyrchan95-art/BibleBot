@@ -1,6 +1,6 @@
 """HeartWing scores — one sonic family, a preset per video.
 usage: python3 score.py <preset> out.wav
-presets: launch-mobile, launch-desktop, reel-a (treasure hunt), reel-b (2AM lo-fi), reel-c (尋安 whisper)"""
+presets: card-1/2/3 (postcards), launch-mobile, launch-desktop, reel-a (treasure hunt), reel-b (2AM lo-fi), reel-c (尋安 whisper)"""
 import numpy as np, wave, sys
 SR = 48000
 rng = np.random.default_rng(11)
@@ -9,6 +9,9 @@ PRESETS = {
     'launch-desktop': dict(dur=30, bpm=120, drums='pop',  drop=6,   end=24, breath=(23.5, 24), cuts=[6, 12, 18], hook='jingle'),
     'reel-a':         dict(dur=15, bpm=120, drums='pop',  drop=2.5, end=12, breath=(11.5, 12), cuts=[2.5, 4.5, 6.5, 8.5, 10], hook='jingle', counts=[2.5, 4.5, 6.5, 8.5]),
     'reel-b':         dict(dur=15, bpm=96,  drums='lofi', drop=2.5, end=12, breath=(11.5, 12), cuts=[2.5, 5, 7.5, 10], hook='click'),
+    'card-1':         dict(dur=15, bpm=120, drums='pop',  drop=2.5, end=12, breath=(11.5, 12), cuts=[2.5, 4.1, 5.7, 7.3, 8.9, 10.5], hook='jingle', counts=[2.5, 4.1, 5.7, 7.3, 8.9]),
+    'card-2':         dict(dur=15, bpm=96,  drums='lofi', drop=2.5, end=12, breath=(11.5, 12), cuts=[2.5, 5, 7.5, 10], hook='click'),
+    'card-3':         dict(dur=15, bpm=72,  drums=None,   drop=99,  end=12, breath=(11, 12),   cuts=[2.5, 5, 7.5, 10], hook='box'),
     'reel-c':         dict(dur=15, bpm=72,  drums=None,   drop=99,  end=12, breath=(11, 12),   cuts=[2.5, 5, 8.5], hook='box'),
 }
 P = PRESETS[sys.argv[1]]

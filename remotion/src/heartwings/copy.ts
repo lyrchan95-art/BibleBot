@@ -55,3 +55,46 @@ export const REEL_C = {
   cardLine: "我就使你們得安息",
   cardRef: "馬太福音 11:28",
 };
+
+// ---------------------------------------------------------------------------
+// 尋安小卡 — postcards sold on their own ($25 each, 5 designs)
+// ---------------------------------------------------------------------------
+export const CARDS = {
+  badge: "尋安小卡 • $25 一張",
+  foot: "全套 5 款 • 市集 / IG DM 有售",
+};
+
+// Card Reel 1 — the collection
+export const CARD_A = {
+  hook: "尋安小卡，到咗！",
+  n1: "No.01 安息",
+  n2: "No.02 茶餐廳",
+  n3: "No.03 天星",
+  n4: "No.04 夜行",
+  n5: "No.05 釣魚翁",
+  price: "每張 $25",
+  priceSub: "全套 5 款，慢慢揀",
+};
+
+// Card Reel 2 — HK corners
+export const CARD_B = {
+  hook: "喺香港，邊度可以抖下？",
+  m1: "茶餐廳一杯奶茶",
+  m2: "天星小輪過海",
+  m3: "麥理浩徑夜行",
+  m4: "同屋企人行山",
+  end: "每個角落，都有安慰",
+  endSub: "$25 一張",
+};
+
+// Card Reel 3 — send one to a tired friend
+export const CARD_C = {
+  hook: "身邊有冇人，最近好攰？",
+  quiet: "唔使講好多",
+  to: "To: 好攰嘅你",
+  note: "辛苦晒，我喺度。",
+  write: "寫低一句，寄畀佢",
+  get: "佢會收到嘅",
+  price: "$25 一張",
+  priceSub: "市集見，親手揀",
+};
