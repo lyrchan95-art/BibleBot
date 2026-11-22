@@ -6,7 +6,7 @@ export const BRAND = {
   cn: "心翼 • 尋安",
   tagline: "pearl armor for tired girls",
   badge: "全港首個 Vintage 首飾盲盒罐",
-  cta: "DM to claim ✦ 旺角市集見",
+  cta: "DM to claim ✦ 市集見",
   postcard: "每張單附送一張尋安小卡",
 };
 
@@ -38,11 +38,11 @@ export const REEL_A = {
 export const REEL_B = {
   hook: "返工返到好攰？",
   deserve: "你值得啲閃閃嘅嘢",
-  station: "旺角",
-  stationEn: "Mong Kok",
-  wind: "今日旺角風好大",
+  station: "市集",
+  stationEn: "Market",
+  wind: "今日風好大",
   windEn: "but still pretty",
-  stall: "旺角市集，等你嚟揀",
+  stall: "市集見，等你嚟揀",
 };
 
 // Reel C — 尋安 Whisper: the hidden postcard

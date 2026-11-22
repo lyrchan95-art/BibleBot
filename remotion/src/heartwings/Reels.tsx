@@ -115,7 +115,7 @@ export const ReelA: React.FC = () => {
 };
 
 // ---------------------------------------------------------------------------
-// Reel B — HK MOMENTS: 2AM, tired girls, Mong Kok
+// Reel B — HK MOMENTS: 2AM, tired girls, the market stall
 // ---------------------------------------------------------------------------
 const NightTint: React.FC = () => (
   <>
